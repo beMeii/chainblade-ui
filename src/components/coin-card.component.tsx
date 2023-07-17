@@ -12,7 +12,7 @@ const CoinCardComponent: React.FC<Props> = (props): React.ReactElement => {
 
 
     return (
-        <Card withBorder radius="md" p={0} className={classes.card}>
+        <Card withBorder shadow="sm" radius="md" p={0} className={classes.card}>
             <Group noWrap spacing={0}>
                 <Image src={props.logo} height={140} width={140} />
                 <div className={classes.body}>
