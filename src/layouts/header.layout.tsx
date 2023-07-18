@@ -7,16 +7,17 @@ import LogoComponent from "../components/logo.component";
 const HeaderLayout: React.FC = (): React.ReactElement => {
 
     const [opened, { toggle }] = useDisclosure(false);
-    const { classes } = useStyles();
+    const { classes, theme } = useStyles();
+
 
     const links = [
         {
             link: '/',
-            label: 'SSC'
+            label: 'Ethereum'
         },
         {
             link: '/',
-            label: 'Test'
+            label: 'Bitcoin'
         }
     ]
 

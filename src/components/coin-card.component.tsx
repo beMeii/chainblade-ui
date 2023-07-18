@@ -1,18 +1,19 @@
-import React from "react";
-import { createStyles, Card, Image, Avatar, Text, Group } from '@mantine/core';
+import React, {useEffect} from "react";
+import {createStyles, Card, Image, Avatar, Text, Group, Button} from '@mantine/core';
 
 interface Props {
     logo: string;
     name: string;
     date: string;
+    onDeleted: (name: string) => void;
 }
 const CoinCardComponent: React.FC<Props> = (props): React.ReactElement => {
 
     const {classes} = useStyles();
 
-
     return (
         <Card withBorder shadow="sm" radius="md" p={0} className={classes.card}>
+            <Button onClick={() => props.onDeleted(props.name)}>Delete me</Button>
             <Group noWrap spacing={0}>
                 <Image src={props.logo} height={140} width={140} />
                 <div className={classes.body}>
