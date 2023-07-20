@@ -3,6 +3,7 @@ import './App.css';
 import HeaderLayout from "./layouts/header.layout";
 import {Grid, MantineProvider} from "@mantine/core";
 import CoinCardComponent from "./components/coin-card.component";
+import LoginOrSignUp from './page/user/login/LoginOrSignUp';
 
 const COIN_CARDS = [
     {
@@ -25,8 +26,9 @@ const COIN_CARDS = [
 function App() {
   return (
       <MantineProvider withGlobalStyles withNormalizeCSS>
-        <HeaderLayout/>
-          <Grid ml="lg" mr="lg">
+        <LoginOrSignUp/>
+        {/* <HeaderLayout/> */}
+          {/* <Grid ml="lg" mr="lg">
               {COIN_CARDS.map((coin) => {
                   return <Grid.Col  md={6} lg={6} style={{
                       height: '160px',
@@ -35,7 +37,8 @@ function App() {
                       <CoinCardComponent date={coin.date} logo={coin.image} name={coin.name}/>
                   </Grid.Col>
               })}
-          </Grid>
+              
+          </Grid> */}
       </MantineProvider>
 
   );
