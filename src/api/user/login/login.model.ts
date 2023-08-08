@@ -1,4 +1,4 @@
-interface LoginRequestModel{
+export interface LoginRequestModel{
     email: string,
     password: string
 }

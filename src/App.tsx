@@ -1,9 +1,7 @@
 import React from 'react';
 import './App.css';
-import HeaderLayout from "./layouts/header.layout";
-import {Grid, MantineProvider} from "@mantine/core";
-import CoinCardComponent from "./components/coin-card.component";
-import LoginOrSignUp from './page/user/login/LoginOrSignUp';
+import {MantineProvider} from "@mantine/core";
+import LoginOrSignUp from './components/user/login/LoginOrSignUp';
 
 const COIN_CARDS = [
     {
@@ -27,18 +25,7 @@ function App() {
   return (
       <MantineProvider withGlobalStyles withNormalizeCSS>
         <LoginOrSignUp/>
-        {/* <HeaderLayout/> */}
-          {/* <Grid ml="lg" mr="lg">
-              {COIN_CARDS.map((coin) => {
-                  return <Grid.Col  md={6} lg={6} style={{
-                      height: '160px',
-                      width: '400px'
-                  }}>
-                      <CoinCardComponent date={coin.date} logo={coin.image} name={coin.name}/>
-                  </Grid.Col>
-              })}
-              
-          </Grid> */}
+
       </MantineProvider>
 
   );

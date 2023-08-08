@@ -1,4 +1,4 @@
-import { createStyles } from "@mantine/core";
+import {createStyles} from "@mantine/core";
 
 export const useStyles = createStyles({
     container: {
@@ -18,13 +18,30 @@ export const useStyles = createStyles({
         width: '30%'
     },
     option: {
-        borderBottom: '3px solid',
         fontSize: "20px",
         fontWeight: "bold",
         margin: "0 2.5%",
         paddingBottom: '2%',
         width: '20%',
-        borderColor: '#B37FEB',
         textAlign: 'center',
+    },
+    optionSelected: {
+        fontSize: "20px",
+        fontWeight: "bold",
+        margin: "0 2.5%",
+        paddingBottom: '2%',
+        width: '20%',
+        textAlign: 'center',
+        borderColor: '#B37FEB',
+        borderBottom: '3px solid',
+
+    },
+    form_wrapper: {
+        padding: '1em 2em'
+    },
+    button_box: {
+        padding: '1em 2em',
+        margin: '0',
+        width: '100%'
     }
 })
